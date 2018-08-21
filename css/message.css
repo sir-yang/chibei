@@ -1,0 +1,43 @@
+body {
+	background: #f2f3f4;
+}
+
+.message_list .time {
+	width: 1.52rem;
+	height: .6rem;
+	line-height: .6rem;
+	margin: .6rem auto .25rem;
+	text-align: center;
+	font-size: .24rem;
+	color: #fff;
+	background: #8b8b8b;
+	border-radius: .08rem;
+	-webkit-border-radius: .08rem;
+	-moz-border-radius: .08rem;
+	-o-border-radius: .08rem;
+}
+
+.cont_box {
+	background: #fff;
+	padding: 0 .3rem;
+}
+.msg_item_top {
+	height: .9rem;
+	border-bottom: 1px solid #e9e9e9;
+}
+.msg_icon {
+	width: .32rem;
+	height: .29rem;
+	margin-right: .15rem;
+}
+.more_icon {
+	width: .14rem;
+	height: .26rem;
+}
+.msg_cont {
+	font-size: .28rem;
+	color: #666;
+	line-height: .46rem;
+	padding-top: .45rem;
+	padding-bottom: .6rem;
+}

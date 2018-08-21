@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+    <link rel="stylesheet" href="../css/weui.min.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/category.css">
+    <script src="../js/setFontSize.js"></script>
+	<title>分类</title>
+</head>
+<body>
+	<div class="search_box flex_start flex_items">
+		<img class="search_img" src="../images/search_icon.png" alt="">
+		<input class="flex1" type="text" placeholder="搜索">
+	</div>
+
+	<div class="content_box">
+		<div class="left_cont">
+			<ul>
+				<li class="active">全部商品</li>
+				<li>主食</li>
+				<li>辣条小吃</li>
+				<li>薯条饼干</li>
+				<li>酒水饮料</li>
+				<li>其他</li>
+			</ul>
+		</div>
+		<div class="right_cont">
+			<img class="banner" src="../images/banner_class.png" alt="">			
+			<div class="cont_list flex_start flex_warp">
+				<div class="item_box">
+					<div class="item_cont flex_column">
+						<img class="shop_img" src="../images/class_img.png" alt="">
+						<div class="shop_name text_overflow">三只松鼠三明治...</div>
+						<img class="add_icon self_end" src="../images/add_icon.png" alt="">
+					</div>
+				</div>
+				<div class="item_box">
+					<div class="item_cont flex_column">
+						<img class="shop_img" src="../images/class_img.png" alt="">
+						<div class="shop_name text_overflow">三只松鼠三明治...</div>
+						<img class="add_icon self_end" src="../images/add_icon.png" alt="">
+					</div>
+				</div>
+				<div class="item_box">
+					<div class="item_cont flex_column">
+						<img class="shop_img" src="../images/class_img.png" alt="">
+						<div class="shop_name text_overflow">三只松鼠三明治...</div>
+						<img class="add_icon self_end" src="../images/add_icon.png" alt="">
+					</div>
+				</div>
+				<div class="item_box">
+					<div class="item_cont flex_column">
+						<img class="shop_img" src="../images/class_img.png" alt="">
+						<div class="shop_name text_overflow">三只松鼠三明治...</div>
+						<img class="add_icon self_end" src="../images/add_icon.png" alt="">
+					</div>
+				</div>
+				<div class="item_box">
+					<div class="item_cont flex_column">
+						<img class="shop_img" src="../images/class_img.png" alt="">
+						<div class="shop_name text_overflow">三只松鼠三明治...</div>
+						<img class="add_icon self_end" src="../images/add_icon.png" alt="">
+					</div>
+				</div>
+				<div class="item_box">
+					<div class="item_cont flex_column">
+						<img class="shop_img" src="../images/class_img.png" alt="">
+						<div class="shop_name text_overflow">三只松鼠三明治...</div>
+						<img class="add_icon self_end" src="../images/add_icon.png" alt="">
+					</div>
+				</div>
+				<div class="item_box">
+					<div class="item_cont flex_column">
+						<img class="shop_img" src="../images/class_img.png" alt="">
+						<div class="shop_name text_overflow">三只松鼠三明治...</div>
+						<img class="add_icon self_end" src="../images/add_icon.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/jquery-weui.js"></script>
+    <script>
+    	$('.left_cont').find('li').click(function () {
+    		$(this).addClass('active').siblings().removeClass('active');
+    	});
+    </script>
+</body>
+</html>

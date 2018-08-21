@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+    <!-- <link rel="stylesheet" href="http://res.wx.qq.com/open/libs/weui/0.4.3/weui.min.css" /> -->
+    <link rel="stylesheet" href="../css/weui.min.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <script src="../js/setFontSize.js"></script>
+	<title>搜索</title>
+</head>
+<body>
+	<div class="weui-search-bar" id="searchBar">
+      <form class="weui-search-bar__form" action="#">
+        <div class="weui-search-bar__box">
+          <i class="weui-icon-search"></i>
+          <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="">
+          <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+        </div>
+        <label class="weui-search-bar__label" id="searchText" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+          <i class="weui-icon-search"></i>
+          <span>搜索</span>
+        </label>
+      </form>
+      <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+    </div>
+
+	<div class="flex_start flex_warp search_shop_list">
+		<div class="shop_item">
+			<div class="shop_item_cont flex_column">
+				<img src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" class="shop_img" alt="">
+				<div class="clamp2 shop_name">好时 贝客诗 夹心黑巧克 力125g 水果夹心巧...</div>
+				<img src="../images/add_icon.png" class="add_btn_icon self_end" alt="">
+			</div>
+		</div>
+		<div class="shop_item">
+			<div class="shop_item_cont flex_column">
+				<img src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" class="shop_img" alt="">
+				<div class="clamp2 shop_name">好时 贝客诗 夹心黑巧克 力125g 水果夹心巧...</div>
+				<img src="../images/add_icon.png" class="add_btn_icon self_end" alt="">
+			</div>
+		</div>
+		<div class="shop_item">
+			<div class="shop_item_cont flex_column">
+				<img src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" class="shop_img" alt="">
+				<div class="clamp2 shop_name">好时 贝客诗 夹心黑巧克 力125g 水果夹心巧...</div>
+				<img src="../images/add_icon.png" class="add_btn_icon self_end" alt="">
+			</div>
+		</div>
+	</div>
+
+
+
+    <div class="weui-tabbar">
+        <a href="#tab1" class="weui-tabbar__item weui-bar__item--on">
+          <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>
+          <div class="weui-tabbar__icon">
+            <img src="../images/icon_nav_button.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">微信</p>
+        </a>
+        <a href="#tab2" class="weui-tabbar__item">
+          <div class="weui-tabbar__icon">
+            <img src="../images/icon_nav_msg.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">通讯录</p>
+        </a>
+        <a href="#tab3" class="weui-tabbar__item">
+          <div class="weui-tabbar__icon">
+            <img src="../images/icon_nav_article.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">发现</p>
+        </a>
+        <a href="#tab4" class="weui-tabbar__item">
+          <div class="weui-tabbar__icon">
+            <img src="../images/icon_nav_cell.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">我</p>
+        </a>
+     </div>
+
+    <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/jquery-weui.js"></script>
+</body>
+</html>
