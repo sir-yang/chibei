@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+    <link rel="stylesheet" href="../css/weui.min.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/personalInfo.css">
+    <script src="../js/setFontSize.js"></script>
+	<title>个人信息</title>
+</head>
+<body>
+	<section class="info_page_box">
+		<a href="javascript:;" id="show-actions" class="cell_box flex_between flex_items">
+			<!-- <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput"> -->
+			<div class="f28 c0">我的订单</div>
+			<div class="flex_start flex_items">
+				<img class="avatar_img" src="../images/def_av.png" alt="">
+				<img class="more_icon" src="../images/more_icon.png" alt="">
+			</div>
+		</a>
+		<a href="javascript:;" class="cell_box flex_between flex_items">
+			<div class="f28 c0">昵称</div>
+			<div class="flex_start flex_items">
+				<span class="f28 c6">肖雷</span>
+				<img class="more_icon" src="../images/more_icon.png" alt="">
+			</div>
+		</a>
+		<a href="javascript:;" class="cell_box flex_between flex_items">
+			<div class="f28 c0">修改密码</div>
+			<div class="flex_start flex_items">
+				<img class="more_icon" src="../images/more_icon.png" alt="">
+			</div>
+		</a>
+		<a href="javascript:;" class="cell_box flex_between flex_items">
+			<div class="f28 c0">修改手机号码</div>
+			<div class="flex_start flex_items">
+				<img class="more_icon" src="../images/more_icon.png" alt="">
+			</div>
+		</a>
+	</section>
+
+	<div class="modal_bg"></div>
+	<div class="modal_cont">
+		<div class="cont_title">
+			<div class="f30 c3">修改昵称</div>
+			<img src="../images/close.png" alt="">
+		</div>
+		<input class="name_ipt" type="text">
+		<a href="javascript:;" class="change_btn">确定</a>
+	</div>
+
+    <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/jquery-weui.js"></script>
+    <script>
+		$(document).on("click", "#show-actions", function() {
+			$.actions({
+			  onClose: function() {
+			    console.log("close");
+			  },
+			  actions: [
+			    {
+			      text: "拍照",
+			      onClick: function() {
+			        $.alert("发布成功");
+			      }
+			    },
+			    {
+			      text: "从手机相册选择",
+			      onClick: function() {
+			        $.alert("你选择了“编辑”");
+			      }
+			    }
+			  ]
+			});
+		});
+    </script>
+</body>
+</html>

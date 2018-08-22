@@ -1,0 +1,83 @@
+
+body {
+	background: #f2f3f4;
+}
+
+.banner {
+	position: relative;
+	width: 100%;
+	height: 3.68rem;
+	padding-top: .88rem;
+	background: url('../images/banner_my.png') no-repeat;
+	background-position: center;
+	background-size: cover;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+.banner .set_icon {
+	position: absolute;
+	top: .4rem;
+	right: .6rem;
+	width: .32rem;
+	height: .3rem;
+}
+.avatar_img {
+	display: block;
+	margin: 0 auto .2rem;
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-o-border-radius: 100%;
+	border: 2px solid #e5e5e5;
+}
+.user_name {
+	font-size: .32rem;
+	color: #fff;
+	text-align: center;
+}
+
+/**/
+.status_box {
+	padding: 0 .3rem;
+	background: #fff;
+}
+.cell_box {
+	line-height: .9rem;
+	color: #333;
+	text-decoration: none;
+	border-bottom: 1px solid #e9e9e9;
+}
+.more_icon {
+	width: .14rem;
+	height: .26rem;
+	margin-left: .3rem;
+}
+.delivery_status {
+	padding-top: .4rem;
+	padding-bottom: .3rem;
+}
+.delivery_status > a:nth-child(1) img {
+	width: .49rem;
+	height: .39rem;
+}
+.delivery_status > a:nth-child(2) img {
+	width: .38rem;
+	height: .38rem;
+}
+.delivery_status > a:nth-child(3) img {
+	width: .4rem;
+	height: .31rem;
+}
+
+/**/
+.list_box .weui-cells{
+	margin-top: .1rem;
+}
+.list_box .weui-cell {
+	height: .9rem;
+	padding: 0 .3rem;
+}

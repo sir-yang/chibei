@@ -92,6 +92,12 @@ html {
 .flex_items {
     align-items: center;
 }
+.flex_items_start {
+    align-items: flex-start;
+}
+.flex_items_end {
+    align-items: flex-end;
+}
 
 .self_start {
     align-self: flex-start;
@@ -267,6 +273,9 @@ html {
 
 /*字体颜色*/
 /*color*/
+.c0 {
+    color: #000000;
+}
 .c3 {
     color: #333333;
 }

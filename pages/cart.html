@@ -21,38 +21,88 @@
 		</div>
 		<div class="has_shop">
 			<div class="cart_list_box">
-				<div class="cart_list_item flex_start">
-					<i class="weui-icon-circle"></i>
-					<img class="shop_img" src="../images/cart_shop_img.png" alt="">
-					<div class="shop_info_box flex_column">
-						<div class="shop_title clamp2">三只松鼠手撕面包饼干蛋糕零食大礼 包酵母面包早餐口袋软面包礼...</div>
-						<div class="flex_between flex_items">
-							<span class="format">规格：85g/袋</span>
-							<div class="num_box flex_start flex_items">
-								<img src="../images/cart_less.png" alt="">
-								<span>少量</span>
-								<img src="../images/cart_add.png" alt="">
+				<div class="cart_list_item">
+					<label for="checkbox_1">
+						<input type="checkbox" id="checkbox_1" class="check_item" />
+						<i class="weui-icon-circle"></i>
+					</label>
+					<div class="flex_start">
+						<img class="shop_img" src="../images/cart_shop_img.png" alt="">
+						<div class="shop_info_box flex_column">
+							<div class="shop_title clamp2">三只松鼠手撕面包饼干蛋糕零食大礼 包酵母面包早餐口袋软面包礼...</div>
+							<div class="flex_between flex_items">
+								<span class="format">规格：85g/袋</span>
+								<div class="num_box flex_start flex_items">
+									<img src="../images/cart_less.png" alt="">
+									<span>少量</span>
+									<img src="../images/cart_add.png" alt="">
+								</div>
 							</div>
+							<div class="num_remark">数量:1-3/袋</div>
 						</div>
-						<div class="num_remark">数量:1-3/袋</div>
 					</div>
 				</div>
-				<div class="cart_list_item flex_start">
-					<i class="weui-icon-circle"></i>
-					<img class="shop_img" src="../images/cart_shop_img.png" alt="">
-					<div class="shop_info_box flex_column">
-						<div class="shop_title clamp2">三只松鼠手撕面包饼干蛋糕零食大礼 包酵母面包早餐口袋软面包礼...</div>
-						<div class="flex_between flex_items">
-							<span class="format">规格：85g/袋</span>
-							<div class="num_box flex_start flex_items">
-								<img src="../images/cart_less.png" alt="">
-								<span>少量</span>
-								<img src="../images/cart_add.png" alt="">
+
+				<div class="cart_list_item">
+					<label for="checkbox_2">
+						<input type="checkbox" id="checkbox_2" class="check_item" />
+						<i class="weui-icon-circle"></i>
+					</label>
+					<div class="flex_start">
+						<img class="shop_img" src="../images/cart_shop_img.png" alt="">
+						<div class="shop_info_box flex_column">
+							<div class="shop_title clamp2">三只松鼠手撕面包饼干蛋糕零食大礼 包酵母面包早餐口袋软面包礼...</div>
+							<div class="flex_between flex_items">
+								<span class="format">规格：85g/袋</span>
+								<div class="num_box flex_start flex_items">
+									<img src="../images/cart_less.png" alt="">
+									<span>少量</span>
+									<img src="../images/cart_add.png" alt="">
+								</div>
 							</div>
+							<div class="num_remark">数量:1-3/袋</div>
 						</div>
-						<div class="num_remark">数量:1-3/袋</div>
 					</div>
 				</div>
+			</div>
+
+			<div class="weui-cell weui-cell_swiped">
+				<div class="weui-cell__bd">
+					<div class="weui-cell cart_list_item">
+						<div class="weui-cell__bd">
+							<label for="checkbox_3">
+								<input type="checkbox" id="checkbox_3" class="check_item" />
+								<i class="weui-icon-circle"></i>
+							</label>
+							<div class="flex_start">
+								<img class="shop_img" src="../images/cart_shop_img.png" alt="">
+								<div class="shop_info_box flex_column">
+									<div class="shop_title clamp2">三只松鼠手撕面包饼干蛋糕零食大礼 包酵母面包早餐口袋软面包礼...</div>
+									<div class="flex_between flex_items">
+										<span class="format">规格：85g/袋</span>
+										<div class="num_box flex_start flex_items">
+											<img src="../images/cart_less.png" alt="">
+											<span>少量</span>
+											<img src="../images/cart_add.png" alt="">
+										</div>
+									</div>
+									<div class="num_remark">数量:1-3/袋</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	            <div class="weui-cell__ft">
+	              <a class="weui-swiped-btn weui-swiped-btn_warn delete-swipeout" href="javascript:">删除</a>
+	            </div>
+	        </div>
+
+			<div class="cart_bottom_box flex_between flex_items">
+				<label for="checkAll">
+					<input type="checkbox" id="checkAll">
+					<i class="weui-icon-circle"></i>全选
+				</label>
+				<div class="submit_order_btn">提交订单</div>
 			</div>
 		</div>
 	</div>
@@ -60,7 +110,53 @@
     <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="../js/jquery-weui.js"></script>
     <script>
-    	$('.weui-cell_swiped').swipeout()
+    	// $('.cart_list_item').find('input[type=checkbox]').each(function() {
+    	// 	var status = $(this).is(':checked');
+    	// 	if (status && $(this).hasClass('weui-icon-circle')) {
+    	// 		$(this).next().addClass('weui-icon-success checked').removeClass('weui-icon-circle');
+    	// 	} else {
+    	// 		$(this).next().addClass('weui-icon-circle').removeClass('weui-icon-success checked');
+    	// 	}
+    	// });
+    	$('.cart_list_item').find('input[type=checkbox]').change(function() {
+    		var check_leng = 0;
+    		var leng = $('.check_item').length;
+    		$('.check_item').each(function() {
+    			if($(this).is(':checked')) {
+    				check_leng += 1;
+    			}
+    		});
+    		if ($(this).is(':checked')) {//选中
+    			$(this).next().addClass('weui-icon-success checked').removeClass('weui-icon-circle');
+    			if (!$('#checkAll').is(':checked') && check_leng == leng) {
+    				$('#checkAll').prop('checked', true);
+    				$('#checkAll').next().addClass('weui-icon-success checked').removeClass('weui-icon-circle');
+    			}
+    		} else {//取消选中
+    			$(this).next().addClass('weui-icon-circle').removeClass('weui-icon-success checked');
+    			if ($('#checkAll').is(':checked')) {
+    				$('#checkAll').prop('checked', false);
+    				$('#checkAll').next().addClass('weui-icon-circle').removeClass('weui-icon-success checked');
+    			}
+    		}
+    	});
+
+    	// 全选
+    	$('#checkAll').change(function(){
+    		if ($(this).is(':checked')) {//选中
+    			$(this).next().addClass('weui-icon-success checked').removeClass('weui-icon-circle');
+    			$('.check_item').each(function() {
+    				$(this).prop('checked', true);
+    				$(this).next().addClass('weui-icon-success checked').removeClass('weui-icon-circle');
+    			});
+    		} else {//取消选中
+    			$(this).next().addClass('weui-icon-circle').removeClass('weui-icon-success checked');
+    			$('.check_item').each(function() {
+    				$(this).prop('checked', false);
+    				$(this).next().addClass('weui-icon-circle').removeClass('weui-icon-success checked');
+    			});
+    		}
+    	});
     </script>
 </body>
 </html>

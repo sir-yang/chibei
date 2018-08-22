@@ -3,10 +3,6 @@ body {
 	background: #f2f3f4;
 }
 
-.cart_page_cont {
-
-}
-
 .cart_icon {
 	display: block;
 	margin: 2.9rem auto .6rem;
@@ -34,18 +30,26 @@ body {
 }
 
 .cart_list_item {
+	position: relative;
 	background: #fff;
 	padding: .3rem;
 	margin-bottom: .1rem;
 }
-.cart_list_item > i {
+
+.cart_list_item label {
+	position: relative;
+	float: left;
 	margin-top: .6rem;
-	margin-left: 0;
-	margin-right: .1rem;
+	margin-right: .3rem;
 }
-.cart_list_item > i::before {
+.cart_list_item label input[type=checkbox] {
+	position: absolute;
+	opacity: 0;
+}
+.cart_list_item label i::before {
 	margin: 0;
 }
+
 .cart_list_item .shop_img {
 	width: 1.52rem;
 	height: 1.52rem;
@@ -92,4 +96,44 @@ body {
 	line-height: .44rem;
 	text-align: right;
 	border-top: 1px solid #f2f3f4;
+}
+
+.weui-swiped-btn {
+	line-height: 2.56rem;
+}
+
+i.checked {
+	color: #ff533b;
+}
+
+
+/*底部*/
+.cart_bottom_box {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: .98rem;
+	background: #fff;
+}
+.cart_bottom_box > label {
+	position: relative;
+	margin-left: .3rem;
+	font-size: .28rem;
+	color: #999;
+}
+.cart_bottom_box > label input {
+	position: absolute;
+	opacity: 0;
+}
+.cart_bottom_box > label i::before {
+	margin: 0;
+	margin-right: .3rem;
+}
+.cart_bottom_box .submit_order_btn {
+	width: 2.26rem;
+	line-height: .98rem;
+	text-align: center;
+	font-size: .28rem;
+	color: #fff;
+	background: #ff533b;
 }
