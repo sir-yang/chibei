@@ -1,0 +1,82 @@
+body {
+	background: #f2f3f4;
+}
+
+.authorize_items {
+	padding: .4rem .3rem;
+	background: #fff;
+	margin-top: .1rem;
+}
+
+.img_text_box .av_img {
+	width: 1.6rem;
+	height: 1.6rem;
+	margin-right: .2rem;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-o-border-radius: 100%;
+	background: #ededed;
+}
+
+.accept_btn {
+	width: .8rem;
+	height: .4rem;
+	margin-left: .4rem;
+	text-align: center;
+	line-height: .4rem;
+	font-size: .22rem;
+	color: #666;
+	border-radius: .06rem;
+	-webkit-border-radius: .06rem;
+	-moz-border-radius: .06rem;
+	-o-border-radius: .06rem;
+	border: 1px solid #cecece;
+}
+.accept_btn.has_add {
+	border: none;
+	color: #333;
+	text-align: left;
+}
+
+.cancel_authorize_btn {
+	display: block;
+	width: 6.9rem;
+	height: .88rem;
+	margin: .95rem auto 0;
+	line-height: .88rem;
+	border-radius: .1rem;
+	-webkit-border-radius: .1rem;
+	-moz-border-radius: .1rem;
+	-o-border-radius: .1rem;
+	border: none;
+	background: #ff533b;
+	font-size: .36rem;
+	color: #fff;
+	outline: none;
+}
+
+.authorize_btn_box {
+	padding: 0 .3rem;
+	margin-top: .7rem;
+}
+.authorize_btn {
+	line-height: .88rem;
+	text-align: center;
+	font-size: .36rem;
+	border-radius: .1rem;
+	-webkit-border-radius: .1rem;
+	-moz-border-radius: .1rem;
+	-o-border-radius: .1rem;
+}
+.authorize_btn_1 {
+	background: #ff533b;
+	color: #fff;
+	border: 1px solid #ff533b;
+	margin-right: .3rem;
+}
+.authorize_btn_2 {
+	background: #fff;
+	color: #ff533b;
+	border: 1px solid #cecece;
+}

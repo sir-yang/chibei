@@ -217,6 +217,12 @@ html {
     padding-left: .3rem;
     padding-right: .3rem;
 }
+.pl30 {
+    padding-left: .3rem;
+}
+.pr30 {
+    padding-right: .3rem;
+}
 .p30 {
     padding: .3rem;
 }

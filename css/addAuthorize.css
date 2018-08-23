@@ -1,0 +1,37 @@
+
+.ipt_box {
+	display: block;
+	width: 100%;
+	padding: 0 .3rem;
+	margin-top: .2rem;
+	margin-bottom: .2rem;
+	line-height: .8rem;
+	border-radius: .06rem;
+	-webkit-border-radius: .06rem;
+	-moz-border-radius: .06rem;
+	-o-border-radius: .06rem;
+	font-size: .28rem;
+	color: #333;
+	border: 1px solid #ececec;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	outline: none;
+}
+.sure_btn {
+	display: block;
+	width: 6.9rem;
+	height: .98rem;
+	margin: 0 auto;
+	line-height: .98rem;
+	border-radius: .1rem;
+	-webkit-border-radius: .1rem;
+	-moz-border-radius: .1rem;
+	-o-border-radius: .1rem;
+	border: none;
+	background: #ff533b;
+	font-size: .36rem;
+	color: #fff;
+	outline: none;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+    <link rel="stylesheet" href="../css/weui.min.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/shopDetail.css">
+    <script src="../js/setFontSize.js"></script>
+	<title>商品详情</title>
+</head>
+<body>
+    <section class="shop_banner">
+        <div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/jquery-weui.js"></script>
+    <script type='text/javascript' src='../js/swiper.min.js' charset='utf-8'></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: true,//可选选项，自动滑动
+            speed: 5000,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction'
+            }
+        });
+    </script>
+</body>
+</html>

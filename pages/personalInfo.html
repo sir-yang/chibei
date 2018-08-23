@@ -15,27 +15,27 @@
 <body>
 	<section class="info_page_box">
 		<a href="javascript:;" id="show-actions" class="cell_box flex_between flex_items">
-			<!-- <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput"> -->
+			<input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
 			<div class="f28 c0">我的订单</div>
 			<div class="flex_start flex_items">
 				<img class="avatar_img" src="../images/def_av.png" alt="">
 				<img class="more_icon" src="../images/more_icon.png" alt="">
 			</div>
 		</a>
-		<a href="javascript:;" class="cell_box flex_between flex_items">
+		<a href="javascript:;" id="show-name" class="cell_box flex_between flex_items">
 			<div class="f28 c0">昵称</div>
 			<div class="flex_start flex_items">
 				<span class="f28 c6">肖雷</span>
 				<img class="more_icon" src="../images/more_icon.png" alt="">
 			</div>
 		</a>
-		<a href="javascript:;" class="cell_box flex_between flex_items">
+		<a href="changePassword.html" class="cell_box flex_between flex_items">
 			<div class="f28 c0">修改密码</div>
 			<div class="flex_start flex_items">
 				<img class="more_icon" src="../images/more_icon.png" alt="">
 			</div>
 		</a>
-		<a href="javascript:;" class="cell_box flex_between flex_items">
+		<a href="changePhone.html" class="cell_box flex_between flex_items">
 			<div class="f28 c0">修改手机号码</div>
 			<div class="flex_start flex_items">
 				<img class="more_icon" src="../images/more_icon.png" alt="">
@@ -49,13 +49,14 @@
 			<div class="f30 c3">修改昵称</div>
 			<img src="../images/close.png" alt="">
 		</div>
-		<input class="name_ipt" type="text">
+		<input class="name_ipt" type="text" value="肖雷" />
 		<a href="javascript:;" class="change_btn">确定</a>
 	</div>
 
     <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="../js/jquery-weui.js"></script>
     <script>
+    	// 修改头像弹框
 		$(document).on("click", "#show-actions", function() {
 			$.actions({
 			  onClose: function() {
@@ -71,11 +72,24 @@
 			    {
 			      text: "从手机相册选择",
 			      onClick: function() {
-			        $.alert("你选择了“编辑”");
+			      	$('#cameraInput').click();
+			        // $.alert("你选择了“编辑”");
 			      }
 			    }
 			  ]
 			});
+		});
+
+		// 关闭修改名称弹框
+		$('.cont_title img').on('click', function() {
+			$(this).parents('.modal_cont').hide();
+			$('.modal_bg').hide();
+		});
+
+		// 开启修改名称弹框
+		$('#show-name').on('click', function() {
+			$('.modal_cont').show();
+			$('.modal_bg').show();
 		});
     </script>
 </body>

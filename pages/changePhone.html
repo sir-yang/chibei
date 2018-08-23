@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+    <link rel="stylesheet" href="../css/weui.min.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/changePhone.css">
+    <script src="../js/setFontSize.js"></script>
+	<title>修改手机号</title>
+</head>
+<body>
+	<section class="phone_page_box">
+		<form action="" method="post">
+			<div class="flex_start flex_items pw_item_box plr30">
+				<label class="f28 c0">手机号码</label>
+				<input class="flex1" type="text" name="phone" maxlength="11" placeholder="请输入手机号码" />
+			</div>
+			<div class="flex_start flex_items pw_item_box pl30">
+				<label class="f28 c0 flex_shrink">验证码</label>
+				<input class="flex1" type="password" name="code" maxlength="6" placeholder="短信验证码" />
+                <button type="button" class="code_btn" onclick="getCode(this)" value="获取验证码">获取验证码</button>
+			</div>
+			<button type="submit" class="sure_pw_btn" onclick="return submitEven(this)">下一步</button>
+		</form>
+	</section>
+
+    <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/jquery-weui.js"></script>
+    <script>
+        // 验证码
+        var countdown=60;
+        function getCode(e) {
+            var reg = /^1[3|4|5|7|8|9][0-9]\d{4,8}$/;//手机号
+            if($('input[name=phone]').val() == "") {
+                $.toast("请先输入手机号", "text");
+                return false;
+            }
+            if (!reg.test($('input[name=phone]').val())) {
+                $.toast("手机号格式错误", "text");
+                return false;
+            }
+            if (countdown == 0) {
+                $(e).prop("disabled", false);
+                $(e).html('获取验证码');
+                $(e).css("color", "#333");
+                countdown = 60;
+            } else {
+                $(e).prop("disabled", true);
+                $(e).html("重新发送(" + countdown + ")");
+                $(e).css("color", "#ccc");
+                countdown--;
+                setTimeout(function() {
+                    getCode(e)
+                },1000)
+            }
+        }
+
+        // 提交
+    	function submitEven(e) {
+    		var f = $(e).closest('form')[0];
+            var reg = /^1[3|4|5|7|8|9][0-9]\d{4,8}$/;//手机号
+            var reg1 = /^(0\\d{2}-\\d{8}(-\\d{1,4})?)|(0\\d{3}-\\d{7,8}(-\\d{1,4})?)$/;//座机号
+    		if (f.phone.value == "") {
+    			$.toast("请输入手机号", "text");
+    			return false;
+    		}
+    		if (!reg.test(f.phone.value) && !reg1.test(f.phone.value)) {
+    			$.toptip('手机号格式错误', 1000, 'warning');
+    			return false;
+    		}
+            if (f.code.value == "") {
+                $.toast("请输入短信验证码", "text");
+                return false;
+            }
+    		$.toptip('手机号修改成功', 1000, 'success');
+    	}
+    </script>
+</body>
+</html>
