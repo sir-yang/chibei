@@ -1,0 +1,120 @@
+body {
+	background: #f2f3f4;
+}
+
+.shop_banner {
+	height: 5.58rem;
+	overflow: hidden;
+}
+.shop_banner .swiper-slide img {
+	width: 100%;
+	height: 5.58rem;
+}
+
+.swiper-pagination {
+	width: .94rem;
+	height: .47rem;
+	line-height: .47rem;
+	left: 6.25rem;
+	bottom: .3rem;
+	background: rgba(0,0,0,.5);
+	border-radius: .4rem;
+	-webkit-border-radius: .4rem;
+	-moz-border-radius: .4rem;
+	-o-border-radius: .4rem;
+	font-size: .28rem;
+	color: #fff;
+	text-align: center;
+}
+
+.shop_base_info {
+	background: #fff;
+	padding: .3rem;
+}
+
+.shop_base_info h3 {
+	font-size: .3rem;
+	line-height: .44rem;
+	color: #333;
+	font-weight: normal;
+}
+.shop_price {
+	margin-top: .2rem;
+	font-size: .28rem;
+	color: #ff5a46;
+}
+.sales_stock span:first-child {
+	margin-right: 1rem;
+}
+.share_icon {
+	width: .3rem;
+	height: .3rem;
+	padding: .1rem;
+}
+
+/*参数*/
+.shop_parameter {
+	margin-top: .1rem;
+	padding: .3rem .3rem 0;
+	background: #fff;
+}
+.items_box {
+	line-height: .88rem;
+	border-bottom: 1px solid #ececec;
+}
+.items_box label {
+	width: 1.25rem;
+	font-size: .24rem;
+	color: #666;
+}
+.items_box span {
+	font-size: .24rem;
+	color: #333;
+}
+
+
+.bottpm_space {
+	width: 100%;
+	height: 1rem;
+	background: #f2f3f4;
+}
+
+/*底部按钮*/
+footer {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: .98rem;
+	background: #fff;
+}
+
+.bottom_btn_box {
+	height: 100%;
+}
+.shop_bottom_btn {
+	justify-content: center;
+	width: 1.25rem;
+	height: 100%;
+	text-align: center;
+}
+.shop_bottom_btn:first-child {
+	border-right: 1px solid #e9e9e9;
+}
+.home_icon {
+	width: .34rem;
+	height: .36rem;
+	margin-bottom: .05rem;
+}
+.cust_icon {
+	width: .43rem;
+	height: .35rem;
+	margin-bottom: .05rem;
+}
+.cart_btn {
+	line-height: .98rem;
+	background: #ff533b;
+	font-size: .3rem;
+	color: #fff;
+	text-align: center;
+}

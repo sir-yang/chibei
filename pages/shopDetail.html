@@ -8,32 +8,85 @@
     <link rel="stylesheet" href="../css/weui.min.css">
     <link rel="stylesheet" href="../css/jquery-weui.css">
     <link rel="stylesheet" href="../css/common.css">
+    <!-- <link rel="stylesheet" href="../css/swiper-3.4.2.min.css"> -->
     <link rel="stylesheet" href="../css/shopDetail.css">
     <script src="../js/setFontSize.js"></script>
 	<title>商品详情</title>
 </head>
 <body>
     <section class="shop_banner">
-        <div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+        <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt=""></div>
                 <div class="swiper-slide"><img src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt=""></div>
                 <div class="swiper-slide"><img src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt=""></div>
             </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
+    <section class="shop_base_info">
+        <h3 class="clamp2">百草味 爆浆果汁软糖45g QQ糖葡萄橡皮糖喜糖 休闲零食水果糖 MJ 葡萄味...</h3>
+        <p class="shop_price">¥ 2.00元</p>
+        <div class="flex_between flex_items mt10">
+            <div class="flex_start sales_stock">
+                <span class="f24 c9">销量：460</span>
+                <span class="f24 c9">库存：666</span>
+            </div>
+            <img class="share_icon" src="../images/share_icon.png" alt="">
+        </div>
+    </section>
+
+    <!-- 商品参数 -->
+    <section class="shop_parameter">
+        <div class="tit">商品参数</div>
+        <div class="items_box flex_start flex_items">
+            <label>生成日期</label>
+            <span>2018年06月24日至2018年07月15日</span>
+        </div>
+        <div class="items_box flex_start flex_items">
+            <label>品牌</label>
+            <span>百草味</span>
+        </div>
+        <div class="items_box flex_start flex_items">
+            <label>净含量</label>
+            <span>45g</span>
+        </div>
+        <div class="items_box flex_start flex_items">
+            <label>包装</label>
+            <span>袋装</span>
+        </div>
+    </section>
+
+    <div class="bottpm_space"></div>
+    <footer>
+        <div class="bottom_btn_box flex_start flex_items">
+            <a href="javascript:;" class="shop_bottom_btn flex_column flex_items">
+                <img class="home_icon" src="../images/home_icon.png" alt="">
+                <span class="f20 c6">首页</span>
+            </a>
+            <a href="javascript:;" class="shop_bottom_btn flex_column flex_items">
+                <img class="cust_icon" src="../images/cust_icon.png" alt="">
+                <span class="f20 c6">客服</sapn>
+            </a>
+            <a href="javascript:;" class="cart_btn flex1">加入购物车</a>
+        </div>
+    </footer>
+
+
     <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="../js/jquery-weui.js"></script>
-    <script type='text/javascript' src='../js/swiper.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='../js/swiper-3.4.2.min.js'></script>
     <script>
         var mySwiper = new Swiper('.swiper-container', {
-            autoplay: true,//可选选项，自动滑动
-            speed: 5000,
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'fraction'
-            }
+            loop: true,
+            autoplay: 3000,//可选选项，自动滑动
+            autoplayDisableOnInteraction: false,//用户操作swiper之后停止自动切换
+            speed: 500,
+            // 如果需要分页器
+            pagination: '.swiper-pagination',
+            paginationType : 'fraction'
         });
     </script>
 </body>
