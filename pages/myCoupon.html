@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+    <link rel="stylesheet" href="../css/weui.min.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/myCoupon.css">
+    <script src="../js/setFontSize.js"></script>
+	<title>我的优惠券</title>
+</head>
+<body>
+	
+	<ul class="top_tab flex_start flex_items">
+		<li class="flex1 active">可使用</li>
+		<li class="flex1">已失效</li>
+	</ul>
+
+	<div class="coupon_list">
+		<ul class="list_box">
+            <li class="flex_between flex_items">
+                <div class="lf_row">
+                    <div class="price">30元</div>
+                    <p class="f24">满1000使用</p>
+                    <p class="f24">有效期：<span>2018.08.01-2018.08.06</span></p>
+                </div>
+                <div class="f30">已领取</div>
+            </li>
+            <li class="flex_between flex_items">
+                <div class="lf_row">
+                    <div class="price">30元</div>
+                    <p class="f24">满1000使用</p>
+                    <p class="f24">有效期：<span>2018.08.01-2018.08.06</span></p>
+                </div>
+                <div class="f30">已领取</div>
+            </li>
+            <li class="flex_between flex_items has_use">
+                <div class="lf_row">
+                    <div class="price">30元</div>
+                    <p class="f24">满1000使用</p>
+                    <p class="f24">有效期：<span>2018.08.01-2018.08.06</span></p>
+                </div>
+                <div class="f30">已使用</div>
+            </li>
+		</ul>
+	</div>
+
+    <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/jquery-weui.js"></script>
+    <script>
+    	$('.top_tab li').click(function() {
+    		$(this).addClass('active').siblings().removeClass('active');
+    	});
+    </script>
+</body>
+</html>

@@ -165,6 +165,17 @@ html {
     overflow: hidden;
 }
 
+/*文本对齐方式*/
+.txt_left {
+    text-align: left;
+}
+.txt_center {
+    text-align: center;
+}
+.txt_right {
+    text-align: right;
+}
+
 /*边距*/
 .mt10 {
     margin-top: .1rem;
@@ -180,6 +191,12 @@ html {
 }
 .mt30 {
     margin-top: .3rem;
+}
+.mr30 {
+    margin-right: .3rem;
+}
+.ml30 {
+    margin-left: .3rem;
 }
 .mb30 {
     margin-bottom: .3rem;
@@ -217,11 +234,17 @@ html {
     padding-left: .3rem;
     padding-right: .3rem;
 }
+.pt30 {
+    padding-top: .3rem;
+}
 .pl30 {
     padding-left: .3rem;
 }
 .pr30 {
     padding-right: .3rem;
+}
+.pb30 {
+    padding-bottom: .3rem;
 }
 .p30 {
     padding: .3rem;
@@ -299,4 +322,11 @@ html {
 }
 .cf {
     color: #ffffff;
+}
+.cs {
+    color: #ff5a46;
+}
+
+.pos {
+    position: relative;
 }

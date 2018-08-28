@@ -3,6 +3,7 @@ body {
 	background: #f2f3f4;
 }
 
+/*无订单*/
 .cart_icon {
 	display: block;
 	margin: 2.9rem auto .6rem;
@@ -29,25 +30,24 @@ body {
 	line-height: .7rem;
 }
 
+
+/*有订单*/
+.remind {
+	height: .8rem;
+	padding: 0 .3rem;
+	line-height: .8rem;
+	background: #fff4f2;
+	font-size: .24rem;
+	color: #333;
+}
 .cart_list_item {
 	position: relative;
 	background: #fff;
-	padding: .3rem;
-	margin-bottom: .1rem;
+	margin-bottom: .2rem;
 }
 
-.cart_list_item label {
-	position: relative;
-	float: left;
-	margin-top: .6rem;
-	margin-right: .3rem;
-}
-.cart_list_item label input[type=checkbox] {
-	position: absolute;
-	opacity: 0;
-}
-.cart_list_item label i::before {
-	margin: 0;
+.shop_base_info {
+	padding: .35rem .3rem .25rem;
 }
 
 .cart_list_item .shop_img {
@@ -55,14 +55,17 @@ body {
 	height: 1.52rem;
 	margin-right: .2rem;
 }
+.cart_list_item .shop_img img {
+	max-width: 100%;
+	max-height: 100%;
+}
 
 .cart_list_item .shop_title {
-	margin-bottom: .2rem;
 	font-size: .28rem;
 	line-height: .44rem;
 	color: #333;
 }
-.format {
+.shop_info_box .format {
 	font-size: .2rem;
 	color: #666;
 	line-height: .44rem;
@@ -88,22 +91,36 @@ body {
 	border-right: 1px solid #e9e9e9;
 	padding: 0 .15rem;
 }
-.num_remark {
-	margin-top: .15rem;
-	padding-top: .2rem;
+
+.shop_info_box .customize {
+	width: 1rem;
+	height: .44rem;
+	margin-left: .2rem;
+	border-radius: .06rem;
+	-webkit-border-radius: .06rem;
+	-moz-border-radius: .06rem;
+	-o-border-radius: .06rem;
+	border: 1px solid #d8d8d8;
 	font-size: .2rem;
-	color: #999999;
+	color: #666;
+	text-align: center;
 	line-height: .44rem;
-	text-align: right;
-	border-top: 1px solid #f2f3f4;
+	outline: none;
+}
+
+.num_remark {
+	padding: 0 .3rem;
+	line-height: .8rem;
+	border-top: 1px solid #ececec;
 }
 
 .weui-swiped-btn {
-	line-height: 2.56rem;
-}
-
-i.checked {
-	color: #ff533b;
+	padding: 0;
+	width: 1.48rem;
+	line-height: 3.12rem;
+	text-align: center;
+	font-size: .24rem;
+	letter-spacing: 1px;
 }
 
 
@@ -114,6 +131,7 @@ i.checked {
 	width: 100%;
 	height: .98rem;
 	background: #fff;
+	z-index: 5;
 }
 .cart_bottom_box > label {
 	position: relative;

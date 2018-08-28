@@ -29,7 +29,37 @@ body {
 
 .shop_base_info {
 	background: #fff;
-	padding: .3rem;
+}
+
+.spike_box {
+	padding: 0 .3rem;
+	line-height: .88rem;
+	background: #ff533b;
+	font-size: .24rem;
+	color: #fff;
+}
+.spike_box span {
+	padding: .03rem .05rem;
+	margin: 0 .1rem;
+	background: #fff;
+	color: #ff533b;
+	font-size: .2rem;
+	border-radius: .04rem;
+	-webkit-border-radius: .04rem;
+	-moz-border-radius: .04rem;
+	-o-border-radius: .04rem;
+}
+
+.spike_box span.old_price {
+	font-size: .24rem;
+	color: #fff;
+	background: transparent;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+.base_info_box {
+	padding: .3rem .3rem 0;
 }
 
 .shop_base_info h3 {
@@ -38,6 +68,28 @@ body {
 	color: #333;
 	font-weight: normal;
 }
+
+.spike_price {
+	margin-top: .2rem;
+}
+.spike_price span.first {
+	padding: 0 .05rem;
+	font-size: .2rem;
+	background: #ff533b;
+	color: #fff;
+}
+
+.spike_price .now_price {
+	margin: 0 .1rem;
+	font-size: .28rem;
+	color: #ff533b;
+}
+
+.spike_price del {
+	font-size: .2rem;
+	color: #999;
+}
+
 .shop_price {
 	margin-top: .2rem;
 	font-size: .28rem;
@@ -50,6 +102,33 @@ body {
 	width: .3rem;
 	height: .3rem;
 	padding: .1rem;
+}
+
+/*优惠券 满减*/
+.favorable_box {
+	height: .88rem;
+}
+.favorable_box .coupon_img {
+	width: .88rem;
+	height: .24rem;
+	margin-right: .1rem;
+}
+.favorable_box .more_icon {
+	width: .14rem;
+	height: .26rem;
+	margin-left: .1rem;
+}
+
+.reduction {
+	margin-right: .1rem;
+	line-height: .25rem;
+	font-size: .2rem;
+	color: #ff533b;
+	border: 1px solid #ff533b;
+	border-radius: .04rem;
+	-webkit-border-radius: .04rem;
+	-moz-border-radius: .04rem;
+	-o-border-radius: .04rem;
 }
 
 /*参数*/
@@ -87,6 +166,7 @@ footer {
 	bottom: 0;
 	height: .98rem;
 	background: #fff;
+	z-index: 1;
 }
 
 .bottom_btn_box {
@@ -117,4 +197,160 @@ footer {
 	font-size: .3rem;
 	color: #fff;
 	text-align: center;
+}
+
+/*属性弹框*/
+.sku_modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.5);
+	z-index: 99;
+}
+.sku_modal_cont,
+.coupon_modal_cont,
+.reduction_modal_cont {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	z-index: 100;
+}
+.coupon_modal_cont,
+.reduction_modal_cont {
+	border-radius: .12rem .12rem 0 0;
+	-webkit-border-radius: .12rem .12rem 0 0;
+	-moz-border-radius: .12rem .12rem 0 0;
+	-o-border-radius: .12rem .12rem 0 0;
+}
+
+.cont_modal_top {
+	padding: 0 .3rem;
+}
+.cont_modal_top .img_box {
+	position: relative;
+	top: -0.37rem;
+	width: 1.36rem;
+	height: 1.36rem;
+	margin-right: .3rem;
+	background: #fff;
+	border: 1px solid #cecece;
+}
+
+.img_box img {
+	width: 100%;
+	height: 100%;
+}
+
+.close_modal {
+	position: absolute;
+	top: .3rem;
+	right: .3rem;
+	width: .44rem;
+	height: .44rem;
+}
+.sku_change_box {
+	max-height: 8.5rem;
+	overflow-y: auto;
+}
+.sku_box {
+	padding: 0 .3rem .4rem;
+	margin-top: .3rem;
+	border-bottom: 1px solid #e9e9e9;
+}
+.sku_box .sku_tit {
+	font-size: .26rem;
+	color: #666;
+}
+.sku_list {
+	list-style: none;
+}
+.sku_list li {
+	padding: .1rem .15rem;
+	margin-top: .3rem;
+	margin-right: .3rem;
+	font-size: .24rem;
+	color: #666;
+	border-radius: .08rem;
+	-webkit-border-radius: .08rem;
+	-moz-border-radius: .08rem;
+	-o-border-radius: .08rem;
+	border: 1px solid #cecece;
+}
+.sku_list li.active {
+	color: #ff5a46;
+	border: 1px solid #ff5a46;
+}
+
+.sku_sure_btn {
+	display: block;
+	width: 100%;
+	height: .98rem;
+	line-height: .98rem;
+	background: #ff533b;
+	text-align: center;
+	font-size: .3rem;
+	color: #fff;
+}
+
+/*优惠券弹框*/
+.modal_cont .cont_tit_txt {
+	margin-top: .25rem;
+	margin-bottom: .35rem;
+	font-size: .36rem;
+	color: #333;
+	text-align: center;
+}
+
+.coupon_list {
+	max-height: 8.5rem;
+	overflow-y: auto;
+	margin-bottom: .1rem;
+	list-style: none;
+	padding: 0 .3rem;
+}
+.coupon_list li {
+	height: 2.05rem;
+	padding: 0 .6rem 0 .5rem;
+	margin-bottom: .2rem;
+	background: url('../images/coupon_bg.png') no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	color: #fff;
+}
+.coupon_list li .lf_row .price {
+	font-size: .42rem;
+}
+.coupon_list li .lf_row p {
+	line-height: .3rem;
+}
+
+/*满减弹框*/
+.reduction_list {
+	list-style: none;
+	border-top: 1px solid #e9e9e9;
+	padding: .3rem .3rem .5rem;
+}
+.reduction_list li {
+	margin-top: .05rem;
+}
+.reduction_list span.types {
+	padding: 0 .05rem;
+	margin-right: .1rem;
+	border: 1px solid #ff533b;
+	border-radius: .04rem;
+	-webkit-border-radius: .04rem;
+	-moz-border-radius: .04rem;
+	-o-border-radius: .04rem;
+	font-size: .24rem;
+	color: #ff533b;
+}
+.reduction_list li span:last-child {
+	font-size: .28rem;
+	color: #666;
 }

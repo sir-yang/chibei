@@ -27,14 +27,39 @@
     </section>
 
     <section class="shop_base_info">
-        <h3 class="clamp2">百草味 爆浆果汁软糖45g QQ糖葡萄橡皮糖喜糖 休闲零食水果糖 MJ 葡萄味...</h3>
-        <p class="shop_price">¥ 2.00元</p>
-        <div class="flex_between flex_items mt10">
-            <div class="flex_start sales_stock">
-                <span class="f24 c9">销量：460</span>
-                <span class="f24 c9">库存：666</span>
+        <div class="spike_box">距离结束<span>00</span>:<span>00</span>:<span>00</span>, 结束后恢复成¥<span class="old_price">2.00</span>元</div>
+        <div class="base_info_box">
+            <h3 class="clamp2">百草味 爆浆果汁软糖45g QQ糖葡萄橡皮糖喜糖 休闲零食水果糖 MJ 葡萄味...</h3>
+            <!-- 秒杀 -->
+            <p class="spike_price"><span class="first">限时价</span><span class="now_price">¥ 1.60元</span><del>¥ 2.00元</del></p>
+            <!-- 正常商品 -->
+            <!-- <p class="shop_price">¥ 2.00元</p> -->
+            <div class="flex_between flex_items mt10 pb30">
+                <div class="flex_start sales_stock">
+                    <span class="f24 c9">销量：460</span>
+                    <span class="f24 c9">库存：666</span>
+                </div>
+                <img class="share_icon" src="../images/share_icon.png" alt="">
             </div>
-            <img class="share_icon" src="../images/share_icon.png" alt="">
+
+            <!-- 优惠券 满减 -->
+            <div class="flex_between flex_items favorable_box" onclick="$('.coupon_modal_cont').show().siblings('.sku_modal').show()">
+                <div class="flex_start flex_items">
+                    <img class="coupon_img" src="../images/coupon.png" alt="">
+                    <span class="f24 c6">领取优惠卷</span>
+                </div>
+                <div class="flex_start flex_items">
+                    <span class="f24 c9">4张</span>
+                    <img class="more_icon" src="../images/more_icon.png" alt="">
+                </div>
+            </div>
+            <div class="flex_between flex_items favorable_box" onclick="$('.reduction_modal_cont').show().siblings('.sku_modal').show()">
+                <div class="flex_start flex_items flex1">
+                    <span class="reduction flex_shrink">满减</span>
+                    <span class="f24 c6 clamp1">满800减5元；满1000元减10元；满1200减15元；满2...</span>
+                </div>
+                <img class="more_icon flex_shrink" src="../images/more_icon.png" alt="">
+            </div>
         </div>
     </section>
 
@@ -75,6 +100,130 @@
     </footer>
 
 
+    <!-- 属性弹框 -->
+    <div class="sku_modal"></div>
+    <div class="sku_modal_cont modal_cont">
+        <div class="cont_row">
+            <div class="flex_start pos cont_modal_top">
+                <div class="img_box">
+                    <img src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+                </div>
+                <div class="f24 c6 mt20">
+                    <p>请选择：<span>口味  规格</span></p>
+                    <p class="f28 cs">¥ 8.00-12.00</p>
+                </div>
+                <img class="close_modal" src="../images/close.png" alt="">
+            </div>
+            <div class="sku_change_box">
+                <div class="sku_box">
+                    <div class="sku_tit">口味：</div>
+                    <ul class="sku_list flex_start flex_items flex_warp">
+                        <li>草莓味</li>
+                        <li class="active">蓝莓味</li>
+                        <li>树莓味</li>
+                        <li>葡萄味</li>
+                    </ul>
+                </div>
+                <div class="sku_box">
+                    <div class="sku_tit">规格：</div>
+                    <ul class="sku_list flex_start flex_items flex_warp">
+                        <li>40ml</li>
+                        <li class="active">60ml</li>
+                        <li>80ml</li>
+                        <li>100ml</li>
+                    </ul>
+                </div>
+                <div class="sku_box">
+                    <div class="sku_tit">数量：</div>
+                    <ul class="sku_list flex_start flex_items flex_warp">
+                        <li>少量(1-3)个</li>
+                        <li class="active">适中(4-6)个</li>
+                        <li>多量(7-10)个</li>
+                        <li>自定义数量</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:;" class="sku_sure_btn">确定</a>
+    </div>
+
+    <!-- 优惠券弹框 -->
+    <div class="coupon_modal_cont modal_cont">
+        <div class="cont_tit">
+            <p class="cont_tit_txt">领取优惠卷</p>
+            <img class="close_modal" src="../images/close.png" alt="">
+        </div>
+        <ul class="coupon_list">
+            <li class="flex_between flex_items">
+                <div class="lf_row">
+                    <div class="price">30元</div>
+                    <p class="f24">满1000使用</p>
+                    <p class="f24">有效期：<span>2018.08.01-2018.08.06</span></p>
+                </div>
+                <div class="f30">已领取</div>
+            </li>
+            <li class="flex_between flex_items">
+                <div class="lf_row">
+                    <div class="price">30元</div>
+                    <p class="f24">满1000使用</p>
+                    <p class="f24">有效期：<span>2018.08.01-2018.08.06</span></p>
+                </div>
+                <div class="f30">已领取</div>
+            </li>
+            <li class="flex_between flex_items">
+                <div class="lf_row">
+                    <div class="price">30元</div>
+                    <p class="f24">满1000使用</p>
+                    <p class="f24">有效期：<span>2018.08.01-2018.08.06</span></p>
+                </div>
+                <div class="f30">已领取</div>
+            </li>
+            <li class="flex_between flex_items">
+                <div class="lf_row">
+                    <div class="price">30元</div>
+                    <p class="f24">满1000使用</p>
+                    <p class="f24">有效期：<span>2018.08.01-2018.08.06</span></p>
+                </div>
+                <div class="f30">已领取</div>
+            </li>
+            <li class="flex_between flex_items">
+                <div class="lf_row">
+                    <div class="price">30元</div>
+                    <p class="f24">满1000使用</p>
+                    <p class="f24">有效期：<span>2018.08.01-2018.08.06</span></p>
+                </div>
+                <div class="f30">已领取</div>
+            </li>
+            <li class="flex_between flex_items">
+                <div class="lf_row">
+                    <div class="price">30元</div>
+                    <p class="f24">满1000使用</p>
+                    <p class="f24">有效期：<span>2018.08.01-2018.08.06</span></p>
+                </div>
+                <div class="f30">已领取</div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 满减弹框 -->
+    <div class="reduction_modal_cont modal_cont">
+        <div class="cont_tit">
+            <p class="cont_tit_txt">满减</p>
+            <img class="close_modal" src="../images/close.png" alt="">
+        </div>
+        <ul class="reduction_list">
+            <li>
+                <span class="types">满减</span>
+                <span>满800减5元</span>
+            </li>
+            <li>
+                <span class="types">满减</span>
+                <span>满800减5元</span>
+            </li>
+        </ul>
+    </div>
+
+
     <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="../js/jquery-weui.js"></script>
     <script type='text/javascript' src='../js/swiper-3.4.2.min.js'></script>
@@ -88,6 +237,45 @@
             pagination: '.swiper-pagination',
             paginationType : 'fraction'
         });
+
+        var spikeTime = 2042;
+        var time = '';
+        countdown(spikeTime);
+
+        // 点击加入购物车
+        $('.cart_btn').click(function() {
+            $('.sku_modal').show().next().show();
+        });
+
+        // 属性选择
+        $('.sku_list li').click(function() {
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+
+        // 关闭弹框
+        $('.close_modal').click(function() {
+            $(this).parents('.modal_cont').hide().siblings('.sku_modal').hide();
+        });
+
+        // 秒杀倒计时
+        function countdown(times) {
+            time = setInterval(function(){
+                if (times >= 0) {
+                    var h = '00';
+                    var m = '00';
+                    var s = '00';
+                    h = parseInt(times/(60*60)) < 10 ? '0' + parseInt(times/(60*60)) : parseInt(times/(60*60));
+                    m = parseInt(times%(60*60)/60) < 10 ? '0' + parseInt(times%(60*60)/60) : parseInt(times%(60*60)/60);
+                    s = times%(60*60)%60 < 10 ? '0' + times%(60*60)%60 : times%(60*60)%60;
+                    $('.spike_box').find('span:eq(0)').html(h);
+                    $('.spike_box').find('span:eq(1)').html(m);
+                    $('.spike_box').find('span:eq(2)').html(s);
+                    times --;
+                } else {
+                    clearInterval(time)
+                }
+            }, 1000);
+        }
     </script>
 </body>
 </html>

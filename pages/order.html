@@ -10,20 +10,119 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/order.css">
     <script src="../js/setFontSize.js"></script>
-	<title>订单</title>
+	<title>我的订单</title>
 </head>
 <body>
 	<div class="order_page_cont">
+		<!-- 无订单 -->
 		<div class="not_order">
 			<img class="order_icon" src="../images/order_icon.png" alt="">
 			<div class="status_desc">暂时还没有订单哦</div>
+		</div>
+		
+		<!-- 有订单 -->
+		<div class="has_order">
+			<ul class="top_tab flex_around flex_items">
+				<li class="active">全部</li>				
+				<li>待配送</li>				
+				<li>待收货</li>				
+				<li>已完成</li>				
+			</ul>
+
+			<ul class="order_list_box">
+				<!-- 已发货 -->
+				<li>
+					<div class="order_top flex_between flex_items">
+						<div class="top_lf">订单编号：<span>201808225156284596</span></div>
+						<div class="top_rt cs">商家已发货</div>
+					</div>
+					<div class="order_info flex_start p30">
+						<img class="flex_shrink" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+						<div class="info_rt">
+							<h4 class="f28 c3 clamp2">延世（Yonsei） 新鲜低温牛奶 223ml 韩 国进口...</h4>
+							<p class="f22 c6 mt10">x多量（7-10）个</p>
+						</div>
+					</div>
+					<div class="btn_box flex_end flex_items">
+						<a href="javascript:;" class="order_btn" onclick="operateOrder(0,1)">确认收货</a>
+						<a href="javascript:;" class="order_btn cs_btn">一键下单</a>
+					</div>
+				</li>
+				<!-- 待配送 多商品 -->
+				<li>
+					<div class="order_top flex_between flex_items">
+						<div class="top_lf">订单编号：<span>201808225156284596</span></div>
+						<div class="top_rt cs">等待配送</div>
+					</div>
+					<div class="order_info flex_start p30">
+						<img class="flex_shrink" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+						<div class="info_rt">
+							<h4 class="f28 c3 clamp2">延世（Yonsei） 新鲜低温牛奶 223ml 韩 国进口...</h4>
+							<p class="f22 c6 mt10">x多量（7-10）个</p>
+						</div>
+					</div>
+					<div class="order_info flex_start p30">
+						<img class="flex_shrink" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+						<div class="info_rt">
+							<h4 class="f28 c3 clamp2">延世（Yonsei） 新鲜低温牛奶 223ml 韩 国进口...</h4>
+							<p class="f22 c6 mt10">x多量（7-10）个</p>
+						</div>
+					</div>
+					<div class="btn_box flex_end flex_items">
+						<a href="javascript:;" class="order_btn">取消订单</a>
+					</div>
+				</li>
+				<!-- 交易关闭 -->
+				<li>
+					<div class="order_top flex_between flex_items">
+						<div class="top_lf">订单编号：<span>201808225156284596</span></div>
+						<div class="top_rt cs">交易关闭</div>
+					</div>
+					<div class="order_info flex_start p30">
+						<img class="flex_shrink" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+						<div class="info_rt">
+							<h4 class="f28 c3 clamp2">延世（Yonsei） 新鲜低温牛奶 223ml 韩 国进口...</h4>
+							<p class="f22 c6 mt10">x多量（7-10）个</p>
+						</div>
+					</div>
+					<div class="btn_box flex_end flex_items">
+						<a href="javascript:;" class="order_btn">删除订单</a>
+						<a href="javascript:;" class="order_btn cs_btn">一键下单</a>
+					</div>
+				</li>
+				<!-- 交易完成 -->
+				<li>
+					<div class="order_top flex_between flex_items">
+						<div class="top_lf">订单编号：<span>201808225156284596</span></div>
+						<div class="top_rt cs">交易已完成</div>
+					</div>
+					<div class="order_info flex_start p30">
+						<img class="flex_shrink" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+						<div class="info_rt">
+							<h4 class="f28 c3 clamp2">延世（Yonsei） 新鲜低温牛奶 223ml 韩 国进口...</h4>
+							<p class="f22 c6 mt10">x多量（7-10）个</p>
+						</div>
+					</div>
+					<div class="btn_box flex_end flex_items">
+						<a href="javascript:;" class="order_btn">删除订单</a>
+						<a href="javascript:;" class="order_btn cs_btn">一键下单</a>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</div>
 
     <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="../js/jquery-weui.js"></script>
     <script>
+    	$('.top_tab li').click(function() {
+    		$(this).addClass('active').siblings().removeClass('active');
+    	});
 
+    	// 订单操作
+    	function operateOrder(type, id) {
+    		self.location='my.html';
+    	}
     </script>
 </body>
 </html>

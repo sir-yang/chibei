@@ -3,6 +3,9 @@ body {
 	background: #f2f3f4;
 }
 
+.not_order {
+	display: none;
+}
 .order_icon {
 	display: block;
 	margin: 2.9rem auto .6rem;
@@ -13,4 +16,95 @@ body {
 	font-size: .3rem;
 	color: #a3a5ad;
 	text-align: center;
+}
+
+/*有订单*/
+.has_order .top_tab {
+	list-style: none;
+	height: 1rem;
+	background: #fff;
+	border-top: 1px solid #e9e9e9;
+	border-bottom: 1px solid #e9e9e9;
+}
+.has_order .top_tab li {
+	flex: 1;
+	position: relative;
+	text-align: center;
+	line-height: 1rem;
+	font-size: .28rem;
+	color: #333;
+}
+.has_order .top_tab li.active {
+	color: #ff533b;
+}
+.has_order .top_tab li.active::after {
+	display: block;
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: .6rem;
+	height: .04rem;
+	background: #ff533b;
+	border-radius: .02rem;
+	-webkit-border-radius: .02rem;
+	-moz-border-radius: .02rem;
+	-o-border-radius: .02rem;
+}
+
+
+/*列表*/
+.order_list_box li {
+	margin-top: .1rem;
+}
+.order_top {
+	height: .6rem;
+	padding: 0 .3rem;
+	background: #fff;
+	font-size: .22rem;
+	color: #666;
+}
+.order_info {
+	background: #fafafa;
+}
+.order_info img {
+	width: 1.52rem;
+	height: 1.52rem;
+	border-radius: .04rem;
+	-webkit-border-radius: .04rem;
+	-moz-border-radius: .04rem;
+	-o-border-radius: .04rem;
+	background: #fff;
+}
+
+.order_info .info_rt {
+	line-height: .44rem;
+	margin-left: .35rem;
+}
+
+/*按钮*/
+.btn_box {
+	height: .8rem;
+	padding-right: .3rem;
+	background: #fff;
+}
+.order_btn {
+	width: 1.5rem;
+	height: .5rem;
+	margin-left: .2rem;
+	border-radius: .25rem;
+	-webkit-border-radius: .25rem;
+	-moz-border-radius: .25rem;
+	-o-border-radius: .25rem;
+	border: 1px solid #999;
+	text-align: center;
+	line-height: .5rem;
+	font-size: .26rem;
+	color: #666;
+}
+.cs_btn {
+	border: 1px solid #ff533b;
+	background: #ff533b;
+	color: #fff;
 }
