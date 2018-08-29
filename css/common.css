@@ -230,6 +230,10 @@ html {
     padding-top: .2rem;
     padding-bottom: .2rem;
 }
+.plr20 {
+    padding-left: .2rem;
+    padding-right: .2rem;
+}
 .plr30 {
     padding-left: .3rem;
     padding-right: .3rem;

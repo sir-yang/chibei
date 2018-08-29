@@ -1,41 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="http://res.wx.qq.com/open/libs/weui/0.4.3/weui.min.css" />
-	<title>首页</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+  ">
+  <!-- <link rel="stylesheet" href="http://res.wx.qq.com/open/libs/weui/0.4.3/weui.min.css" /> -->
+  <link rel="stylesheet" href="../css/weui.min.css">
+  <link rel="stylesheet" href="../css/jquery-weui.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <script src="../js/setFontSize.js"></script>
+  <title>首页</title>
 </head>
 <body>
-	<div class="weui_msg">
-	    <div class="weui_icon_area"><i class="weui_icon_success weui_icon_msg"></i></div>
-	    <div class="weui_text_area">
-	        <h2 class="weui_msg_title">操作成功</h2>
-	        <p class="weui_msg_desc">内容详情，可根据实际需要安排</p>
-	    </div>
-	    <div class="weui_opr_area">
-	        <p class="weui_btn_area">
-	            <a href="javascript:;" class="weui_btn weui_btn_primary">确定</a>
-	            <a href="javascript:;" class="weui_btn weui_btn_default">取消</a>
-	        </p>
-	    </div>
-	    <div class="weui_extra_area">
-	        <a href="">查看详情</a>
-	    </div>
-	</div>
+	
+	<section>
+		<div class="search_box flex_start flex_items">
+			<img class="scan_img" src="../images/scan_code.png" alt="">
+			<div class="center_ipt_box flex_start flex_items">
+				<img src="../images/search_icon.png" alt="">
+				<input type="search" placeholder="搜索" readonly onclick="self.location='search.html'">
+			</div>
+			<div class="pos msg_box">
+				<img src="../images/msg_icon_1.png" alt="">
+				<span class="msg_num">13</span>
+			</div>
+		</div>
+	</section>
 
-	<a href="javascript:;" class="weui_btn weui_btn_primary">按钮</a>
-	<a href="javascript:;" class="weui_btn weui_btn_disabled weui_btn_primary">按钮</a>
-	<a href="javascript:;" class="weui_btn weui_btn_warn">确认</a>
-	<a href="javascript:;" class="weui_btn weui_btn_disabled weui_btn_warn">确认</a>
-	<a href="javascript:;" class="weui_btn weui_btn_default">按钮</a>
-	<a href="javascript:;" class="weui_btn weui_btn_disabled weui_btn_default">按钮</a>
-	<div class="button_sp_area">
-	    <a href="javascript:;" class="weui_btn weui_btn_plain_default">按钮</a>
-	    <a href="javascript:;" class="weui_btn weui_btn_plain_primary">按钮</a>
+	<!-- banner -->
+	<section>
+        <div class="swiper-container banner_box">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../images/banner.png" alt=""></div>
+                <div class="swiper-slide"><img src="../images/banner.png" alt=""></div>
+                <div class="swiper-slide"><img src="../images/banner.png" alt=""></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+	</section>
+	
+	<!-- 筛选类目栏 -->
+	<section>
+		<div class="class_tab_box flex_start">
+			<a href="javascript:;" class="tab_item">
+				<img src="../images/tab_icon_1.png" alt="">
+				<p>新品上架</p>
+			</a>
+			<a href="javascript:;" class="tab_item">
+				<img src="../images/tab_icon_2.png" alt="">
+				<p>热销商品</p>
+			</a>
+			<a href="javascript:;" class="tab_item">
+				<img src="../images/tab_icon_3.png" alt="">
+				<p>最近购买</p>
+			</a>
+			<a href="javascript:;" class="tab_item">
+				<img src="../images/tab_icon_4.png" alt="">
+				<p>在线客服</p>
+			</a>
+		</div>
+	</section>
 
-	    <a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_primary">按钮</a>
-	    <a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_default">按钮</a>
-	</div>
+	<!-- 一键下单/优惠券 -->
+	<section>
+		<a href="javascript:;" class="once_click_order">
+			<h3>一键下单</h3>
+			<span>重复上一次的订单</span>
+		</a>
+		<a href="javascript:;" class="coupon_box">
+			<img class="" src="../images/coupon_img.png" alt="">
+		</a>
+	</section>
+
+	<!-- 口碑推荐 -->
+	<section>
+		<div class="recommend_box">
+			<div class="top_tit_box flex_center flex_items">
+				<div class="center_box flex_start flex_items">
+					<img src="../images/like_icon.png" alt="">
+					<span>口碑推荐</span>
+				</div>
+				<a href="javascript:;" class="right_box  flex_start flex_items">
+					<span>查看更多</span>
+					<img src="../images/more_icon.png" alt="">
+				</a>
+			</div>
+
+			<div class="shop_container">
+			    <div class="shop-wrapper">
+					<div class="shop-slide">
+						<img class="shop_img" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+						<h4 class="text_overflow">三只松鼠三明治...</h4>
+						<span>¥ 19.00</span>
+						<img class="add_icon" src="../images/add_icon.png" alt="">
+					</div>
+					<div class="shop-slide">
+						<img class="shop_img" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+						<h4 class="text_overflow">三只松鼠三明治...</h4>
+						<span>¥ 19.00</span>
+						<img class="add_icon" src="../images/add_icon.png" alt="">
+					</div>
+					<div class="shop-slide">
+						<img class="shop_img" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+						<h4 class="text_overflow">三只松鼠三明治...</h4>
+						<span>¥ 19.00</span>
+						<img class="add_icon" src="../images/add_icon.png" alt="">
+					</div>
+					<div class="shop-slide">
+						<img class="shop_img" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+						<h4 class="text_overflow">三只松鼠三明治...</h4>
+						<span>¥ 19.00</span>
+						<img class="add_icon" src="../images/add_icon.png" alt="">
+					</div>
+			    </div>
+			</div>
+		</div>
+	</section>
+
+	<!-- 最新上架 -->
+	<section>
+		<div class="newest_box">
+			<div class="top_tit_box flex_center flex_items">
+				<div class="center_box flex_start flex_items">
+					<img src="../images/new_icon.png" alt="">
+					<span>最新上架</span>
+				</div>
+				<a href="javascript:;" class="right_box  flex_start flex_items">
+					<span>查看更多</span>
+					<img src="../images/more_icon.png" alt="">
+				</a>
+			</div>
+
+			<div class="shop_container">
+			    <div class="shop-wrapper">
+					<div class="shop-slide">
+						<img class="shop_img" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+						<h4 class="text_overflow">三只松鼠三明治...</h4>
+						<span>¥ 19.00</span>
+						<img class="add_icon" src="../images/add_icon.png" alt="">
+					</div>
+					<div class="shop-slide">
+						<img class="shop_img" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+						<h4 class="text_overflow">三只松鼠三明治...</h4>
+						<span>¥ 19.00</span>
+						<img class="add_icon" src="../images/add_icon.png" alt="">
+					</div>
+					<div class="shop-slide">
+						<img class="shop_img" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+						<h4 class="text_overflow">三只松鼠三明治...</h4>
+						<span>¥ 19.00</span>
+						<img class="add_icon" src="../images/add_icon.png" alt="">
+					</div>
+					<div class="shop-slide">
+						<img class="shop_img" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+						<h4 class="text_overflow">三只松鼠三明治...</h4>
+						<span>¥ 19.00</span>
+						<img class="add_icon" src="../images/add_icon.png" alt="">
+					</div>
+			    </div>
+			</div>
+		</div>
+	</section>
+
+	<!-- 广告 -->
+	<section class="advertising_box">
+		<img src="../images/advertising.png" alt="">
+	</section>
+
+	<!-- 上周热榜 -->
+	<section>
+		<div class="hot_box">
+			<div class="top_tit_box flex_center flex_items">
+				<div class="center_box flex_start flex_items">
+					<img src="../images/hot_icon.png" alt="">
+					<span>上周热榜</span>
+				</div>
+				<a href="javascript:;" class="right_box  flex_start flex_items">
+					<span>查看更多</span>
+					<img src="../images/more_icon.png" alt="">
+				</a>
+			</div>
+
+			<div class="shop_container">
+			    <div class="shop-wrapper">
+					<div class="shop-slide">
+						<img class="shop_img" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+						<h4 class="text_overflow">三只松鼠三明治...</h4>
+						<span>¥ 19.00</span>
+						<img class="add_icon" src="../images/add_icon.png" alt="">
+					</div>
+					<div class="shop-slide">
+						<img class="shop_img" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+						<h4 class="text_overflow">三只松鼠三明治...</h4>
+						<span>¥ 19.00</span>
+						<img class="add_icon" src="../images/add_icon.png" alt="">
+					</div>
+					<div class="shop-slide">
+						<img class="shop_img" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+						<h4 class="text_overflow">三只松鼠三明治...</h4>
+						<span>¥ 19.00</span>
+						<img class="add_icon" src="../images/add_icon.png" alt="">
+					</div>
+					<div class="shop-slide">
+						<img class="shop_img" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+						<h4 class="text_overflow">三只松鼠三明治...</h4>
+						<span>¥ 19.00</span>
+						<img class="add_icon" src="../images/add_icon.png" alt="">
+					</div>
+			    </div>
+			</div>
+		</div>
+	</section>
+
+	<!-- 限时秒杀 -->
+	<section>
+		<div class="spike_box mt20">
+			<div class="top_tit_box flex_center flex_items">
+				<div class="center_box flex_start flex_items">
+					<img src="../images/spike_icon.png" alt="">
+					<span>限时秒杀</span>
+				</div>
+				<a href="javascript:;" class="right_box  flex_start flex_items">
+					<span>查看更多</span>
+					<img src="../images/more_icon.png" alt="">
+				</a>
+			</div>
+
+			<ul class="spike_container">
+				<li class="flex_start">
+					<img class="shop_img flex_shrink" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+					<div class="rt_shop_info flex_between flex_column flex1 pos">
+						<h4 class="clamp2">三只松鼠手撕面包饼干蛋糕零食大礼包酵 母面包早餐口袋软面包礼...</h4>
+						<div class="flex_column">
+							<label>距离结束<span>00</span>:<span>00</span>:<span>00</span></label>
+							<span class="f28 cs">¥ 19.00</span>
+						</div>
+						<img class="add_icon" src="../images/add_icon.png" alt="">
+					</div>
+				</li>
+				<li class="flex_start">
+					<img class="shop_img flex_shrink" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+					<div class="rt_shop_info flex_between flex_column flex1 pos">
+						<h4 class="clamp2">三只松鼠手撕面包饼干蛋糕零食大礼包酵 母面包早餐口袋软面包礼...</h4>
+						<div class="flex_column">
+							<label>距离结束<span>00</span>:<span>00</span>:<span>00</span></label>
+							<span class="f28 cs">¥ 19.00</span>
+						</div>
+						<img class="add_icon" src="../images/add_icon.png" alt="">
+					</div>
+				</li>
+				<li class="flex_start">
+					<img class="shop_img flex_shrink" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+					<div class="rt_shop_info flex_between flex_column flex1 pos">
+						<h4 class="clamp2">三只松鼠手撕面包饼干蛋</h4>
+						<div class="flex_column">
+							<label>距离结束<span>00</span>:<span>00</span>:<span>00</span></label>
+							<span class="f28 cs">¥ 19.00</span>
+						</div>
+						<img class="add_icon" src="../images/add_icon.png" alt="">
+					</div>
+				</li>
+				<li class="flex_start">
+					<img class="shop_img flex_shrink" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
+					<div class="rt_shop_info flex_between flex_column flex1 pos">
+						<h4 class="clamp2">三只松鼠手撕面包饼干蛋糕零食大礼包酵 母面包早餐口袋软面包礼...</h4>
+						<div class="flex_column">
+							<label>距离结束<span>00</span>:<span>00</span>:<span>00</span></label>
+							<span class="f28 cs">¥ 19.00</span>
+						</div>
+						<img class="add_icon" src="../images/add_icon.png" alt="">
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+    <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/jquery-weui.js"></script>
+    <script type='text/javascript' src='../js/swiper-3.4.2.min.js'></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: 3000,//可选选项，自动滑动
+            autoplayDisableOnInteraction: false,//用户操作swiper之后停止自动切换
+            speed: 500,
+            // 如果需要分页器
+            pagination: '.swiper-pagination'
+        });
+
+    </script>
 </body>
 </html>
