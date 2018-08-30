@@ -91,6 +91,7 @@ body {
 }
 
 .shop_list li .item_box {
+	display: block;
 	border: 1px solid #cecece;
 }
 
@@ -101,7 +102,9 @@ body {
 }
 
 .item_box .shop_name {
+	margin-bottom: .1rem;
 	font-size: .28rem;
+	font-weight: normal;
 	color: #333;
 	line-height: .44rem;
 }

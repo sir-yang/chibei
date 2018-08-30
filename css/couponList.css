@@ -1,0 +1,29 @@
+
+body {
+	background: #f2f3f4;
+}
+
+.coupon_list {
+	padding: .2rem .3rem 0;
+}
+
+.list_box li {
+	height: 2.05rem;
+	padding: 0 .6rem 0 .5rem;
+	margin-bottom: .2rem;
+	background: url('../images/coupon_bg.png') no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	color: #fff;
+}
+.list_box li.has_use {
+	background: url('../images/coupon_bg_1.png') no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+.coupon_list li .lf_row .price {
+	font-size: .42rem;
+}
+.coupon_list li .lf_row p {
+	line-height: .3rem;
+}
