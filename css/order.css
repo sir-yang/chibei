@@ -69,7 +69,8 @@ body {
 	background: #fafafa;
 }
 .order_info img {
-	width: 1.52rem;
+	/*width: 1.52rem;*/
+	width: 2.04rem;
 	height: 1.52rem;
 	border-radius: .04rem;
 	-webkit-border-radius: .04rem;

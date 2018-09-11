@@ -83,13 +83,22 @@
 	</div>
 
 	<div class="space_box"></div>
-	<a class="submit_btn" href="successOrder.html">提交订单</a>
+	<a class="submit_btn" href="javascript:submitOrder();">提交订单</a>
 	
 
     <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="../js/jquery-weui.js"></script>
     <script>
+    	// 提交订单
+    	function submitOrder() {
+    		var remark = $('textarea[name=remark]').val();
 
+    		$.showLoading();
+    		setTimeout(function() {
+    			$.hideLoading();
+    			self.location.href = "successOrder.html";
+    		}, 2000);
+    	}
     </script>
 </body>
 </html>

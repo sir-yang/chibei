@@ -97,8 +97,9 @@ body {
 
 .item_box .shop_img {
 	display: block;
-	max-width: 100%;
-	height: 3.45rem;
+	width: 100%;
+	/*height: 3.45rem;*/
+	height: 2.56rem;
 }
 
 .item_box .shop_name {

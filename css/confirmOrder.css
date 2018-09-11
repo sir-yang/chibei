@@ -38,7 +38,8 @@ body {
 	background: #fff;
 }
 .order_shop_box ul li .shop_img {
-	width: 1.52rem;
+	/*width: 1.52rem;*/
+	width: 2.04rem;
 	height: 1.52rem;
 	margin-right: .3rem;
 	border-radius: .04rem;

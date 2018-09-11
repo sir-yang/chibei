@@ -96,8 +96,11 @@
 }
 .cont_list .item_box .item_cont .shop_img {
 	width: 100%;
+	height: 1.9rem;
+	margin-top: .05rem;
 }
 .cont_list .item_box .item_cont .shop_name {
+	height: .88rem;
 	font-size: .28rem;
 	color: #333;
 	line-height: .44rem;

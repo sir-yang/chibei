@@ -67,7 +67,8 @@ body {
 	padding: .4rem .3rem .3rem;
 }
 .order_shop li .img_box {
-	width: 1.52rem;
+	/*width: 1.52rem;*/
+	width: 2.04rem;
 	height: 1.52rem;
 	margin-right: .3rem;
 	border-radius: .04rem;

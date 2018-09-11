@@ -182,10 +182,11 @@ body {
 	background: #fff;
 }
 .shop_container .shop-wrapper {
-	width: 12rem;
+	width: 15rem;
 }
 .shop_container .shop-slide {
-	width: 2.54rem;
+	/*width: 2.54rem;*/
+	width: 3.42rem;
 	border: 1px solid #cecece;
 	float: left;
 	margin-left: .2rem;
@@ -257,7 +258,8 @@ body {
 	border-bottom: 1px solid #cecece;
 }
 .spike_container li img.shop_img {
-	width: 1.52rem;
+	/*width: 1.52rem;*/
+	width: 2.04rem;
 	height: 1.52rem;
 	margin-right: .2rem;
 	border-radius: .04rem;
