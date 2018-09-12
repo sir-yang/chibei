@@ -132,3 +132,52 @@
 	width: .32rem;
 	height: .32rem;
 }
+
+.weui-tabbar__item.weui-bar__item--on .weui-tabbar__label {
+	color: #ff533b;
+}
+
+.weui-tabbar .weui-tabbar__item:nth-child(1) .weui-tabbar__icon {
+	background: url('../images/tabbar_home_normal.png') no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.weui-tabbar .weui-tabbar__item.weui-bar__item--on:nth-child(1) .weui-tabbar__icon {
+	background: url('../images/tabbar_home_selected.png') no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.weui-tabbar .weui-tabbar__item:nth-child(2) .weui-tabbar__icon {
+	background: url('../images/tabbar_category_normal.png') no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.weui-tabbar .weui-tabbar__item.weui-bar__item--on:nth-child(2) .weui-tabbar__icon {
+	background: url('../images/tabbar_category_selected.png') no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.weui-tabbar .weui-tabbar__item:nth-child(3) .weui-tabbar__icon {
+	background: url('../images/tabbar_cart_normal.png') no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.weui-tabbar .weui-tabbar__item.weui-bar__item--on:nth-child(3) .weui-tabbar__icon {
+	background: url('../images/tabbar_cart_selected.png') no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.weui-tabbar .weui-tabbar__item:nth-child(4) .weui-tabbar__icon {
+	background: url('../images/tabbar_my_normal.png') no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.weui-tabbar .weui-tabbar__item.weui-bar__item--on:nth-child(4) .weui-tabbar__icon {
+	background: url('../images/tabbar_my_selected.png') no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.weui-bar__item--on {
+
+}
