@@ -33,11 +33,9 @@
 								</div>
 								<div class="shop_info_box flex_column">
 									<div class="shop_title clamp2">三只松鼠手撕面包饼干蛋糕零食大礼 包酵母面包早餐口袋软面包礼...</div>
+									<div class="format">规格：85g/袋</div>
 									<div class="flex_between flex_items">
-										<div class="flex_column">
-											<span class="format">规格：85g/袋</span>
-											<span class="f20 cs price">¥16.00</span>
-										</div>
+										<span class="f20 cs price">¥16.00</span>
 										<div class="self_end flex_start flex_items">
 											<div class="num_box flex_start flex_items">
 												<img onclick="changeNum(this,'less')" src="../images/cart_less.png" alt="">
@@ -71,11 +69,9 @@
 								</div>
 								<div class="shop_info_box flex_column">
 									<div class="shop_title clamp2">三只松鼠手撕面包饼干蛋糕零食大礼 包酵母面包早餐口袋软面包礼...</div>
+									<div class="format">规格：85g/袋</div>
 									<div class="flex_between flex_items">
-										<div class="flex_column">
-											<span class="format">规格：85g/袋</span>
-											<span class="f20 cs price">¥16.00</span>
-										</div>
+										<span class="f20 cs price">¥16.00</span>
 										<div class="self_end flex_start flex_items">
 											<div class="num_box flex_start flex_items">
 												<img onclick="changeNum(this,'less')" src="../images/cart_less.png" alt="">
@@ -160,7 +156,7 @@
     		// 区间类型ID
     		var num = span.attr('data-id');
     		// 商品单价
-    		var price = (span.parents('.self_end').prev().find('span.price').html()).substring(1);
+    		var price = (span.parents('.self_end').prev().html()).substring(1);
     		// 商品数量及金额
     		var price_money = $(e).parents('.shop_base_info').next();
     		var money = 0;
@@ -199,7 +195,7 @@
     	$('input').on('input propertychange', function() {
     		var val = $(this).val();
     		// 商品单价
-    		var price = ($(this).parents('.self_end').prev().find('span.price').html()).substring(1);
+    		var price = ($(this).parents('.self_end').prev().html()).substring(1);
     		// 获取当前商品总价
 			var money = countMoney(price, val);
 			// 数量区间
