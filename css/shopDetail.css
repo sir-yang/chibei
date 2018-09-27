@@ -154,6 +154,24 @@ body {
 }
 
 
+/*商品详情*/
+.detail_info_box {
+    padding: .3rem .3rem .1rem;
+    margin-top: .1rem;
+    background: #fff;
+}
+.detail_info_box .tit {
+    font-size:.3rem;
+    color:#333;
+    margin-bottom:.2rem;
+}
+.detail_info_box img {
+    width: 100%;
+    margin: 5px 0;
+}
+
+
+/*底部间距*/
 .bottpm_space {
 	width: 100%;
 	height: 1rem;
@@ -175,6 +193,7 @@ footer {
 	height: 100%;
 }
 .shop_bottom_btn {
+	position: relative;
 	justify-content: center;
 	width: 1.25rem;
 	height: 100%;
@@ -189,9 +208,26 @@ footer {
 	margin-bottom: .05rem;
 }
 .cust_icon {
-	width: .43rem;
-	height: .35rem;
+	width: .42rem;
+	height: .36rem;
 	margin-bottom: .05rem;
+}
+.shop_bottom_btn .bubble {
+	position: absolute;
+	top: .02rem;
+	right: .37rem;
+	display: block;
+	width: .24rem;
+	height: .24rem;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-o-border-radius: 100%;
+	background: #f52c2c;
+	font-size: .14rem;
+	color: #fff;
+	text-align: center;
+	line-height: .24rem;
 }
 .cart_btn {
 	line-height: .98rem;
@@ -287,6 +323,22 @@ footer {
 .sku_list li.active {
 	color: #ff5a46;
 	border: 1px solid #ff5a46;
+}
+
+.sku_list li.customize {
+	position: relative;
+}
+.sku_list li.customize input {
+	position: absolute;
+	top: 0;
+	left: 1.9rem;
+	bottom: 0;
+	width: 1.5rem;
+	font-size: .24rem;
+	text-align: center;
+	border-radius: 0.08rem;
+	border: 1px solid #cecece;
+	outline: none;
 }
 
 .sku_sure_btn {

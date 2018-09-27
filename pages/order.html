@@ -28,8 +28,11 @@
 				<li>待收货</li>				
 				<li>已完成</li>				
 			</ul>
+			
+			<!-- 间距 -->
+			<div class="top_spacing"></div>
 
-			<ul class="order_list_box">
+			<ul class="order_list_box content-padded">
 				<!-- 已发货 -->
 				<li>
 					<div class="order_top flex_between flex_items">
@@ -109,6 +112,11 @@
 					</div>
 				</li>
 			</ul>
+			<!-- 加载更多 -->
+	        <div class="weui-loadmore">
+	            <i class="weui-loading"></i>
+	            <span class="weui-loadmore__tips">正在加载</span>
+	        </div>
 		</div>
 	</div>
 
@@ -117,12 +125,27 @@
     <script>
     	$('.top_tab li').click(function() {
     		$(this).addClass('active').siblings().removeClass('active');
+    		//重新初始化
+            $(document.body).infinite();
+            $('.weui-loadmore').show();
     	});
 
     	// 订单操作
     	function operateOrder(type, id) {
     		self.location='orderDetail.html';
     	}
+
+    	// 加载更多
+        var loading = false;//防止多次加载
+        $(document.body).infinite().on("infinite", function () {
+            if (loading) return;
+            loading = true;
+			setTimeout(function() {
+				$(document.body).destroyInfinite();
+            	$('.weui-loadmore').hide();
+				loading = false;
+			}, 1500);   //模拟延迟
+        });
     </script>
 </body>
 </html>

@@ -17,31 +17,73 @@
         <div class="flex_start flex_items authorize_search">
             <img class="search_icon" src="../images/search_icon.png" alt="">
             <input type="search" class="search_ipt flex1" placeholder="搜索" />
-            <a href="addAuthorize.html" class="search_add_btn">新增</a>
+            <!-- <a href="addAuthorize.html" class="search_add_btn">新增</a> -->
         </div>
 	</section>
 
     <section class="authorize_list">
-        <a href="authorize.html" class="authorize_items flex_between flex_items">
-            <div class="img_text_box flex_start flex_items">
-                <img class="av_img flex_shrink" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="" />
-                <div class="txt_box">
-                    <h4 class="f28 c3">姓名：张三</h4>
-                    <p class="f28 c9">授权理由：我要购买货柜B的商品，请求授权</p>
+        <div class="weui-cell weui-cell_swiped">
+            <div class="weui-cell__bd">
+                <div class="cart_list_item">
+                    <div class="weui-cell__bd authorize_items flex_between flex_items">
+                        <div class="img_text_box flex_start flex_items">
+                            <img class="av_img flex_shrink" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="" />
+                            <div class="txt_box">
+                                <h4 class="f28 c3">姓名：张三</h4>
+                                <p class="f28 c9">授权理由：我要购买货柜B的商品，请求授权</p>
+                            </div>
+                        </div>
+                        <div class="accept_btn flex_shrink">待审核</div>
+                    </div>
                 </div>
             </div>
-            <div class="accept_btn flex_shrink">接受</div>
-        </a>
-        <a href="javascript:;" class="authorize_items flex_between flex_items">
-            <div class="img_text_box flex_start flex_items">
-                <img class="av_img flex_shrink" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">
-                <div class="txt_box">
-                    <h4 class="f28 c3">姓名：张三</h4>
-                    <p class="f28 c9">授权理由：我要购买货柜B的商品，请求授权</p>
+            <div class="weui-cell__ft">
+              <a class="weui-swiped-btn pass_auth flex_start flex_items" href="javascript:">接受</a>
+              <a class="weui-swiped-btn refuse_auth flex_start flex_items" href="javascript:">拒绝</a>
+            </div>
+        </div>
+
+        <div class="weui-cell weui-cell_swiped">
+            <div class="weui-cell__bd">
+                <div class="cart_list_item">
+                    <div class="weui-cell__bd authorize_items flex_between flex_items">
+                        <div class="img_text_box flex_start flex_items">
+                            <img class="av_img flex_shrink" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="" />
+                            <div class="txt_box">
+                                <h4 class="f28 c3">姓名：张三</h4>
+                                <p class="f28 c9">授权理由：我要购买货柜B的商品，请求授权</p>
+                            </div>
+                        </div>
+                        <div class="accept_btn flex_shrink">已通过</div>
+                    </div>
                 </div>
             </div>
-            <div class="accept_btn has_add flex_shrink">已添加</div>
-        </a>
+            <div class="weui-cell__ft">
+              <a class="weui-swiped-btn refuse_auth flex_start flex_items" href="javascript:">取消</a>
+            </div>
+        </div>
+
+        <div class="weui-cell weui-cell_swiped">
+            <div class="weui-cell__bd">
+                <div class="cart_list_item">
+                    <div class="weui-cell__bd authorize_items flex_between flex_items">
+                        <div class="img_text_box flex_start flex_items">
+                            <img class="av_img flex_shrink" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="" />
+                            <div class="txt_box">
+                                <h4 class="f28 c3">姓名：张三</h4>
+                                <p class="f28 c9">授权理由：我要购买货柜B的商品，请求授权</p>
+                            </div>
+                        </div>
+                        <div class="accept_btn flex_shrink">已拒绝</div>
+                    </div>
+                </div>
+            </div>
+<!--             <div class="weui-cell__ft">
+              <a class="weui-swiped-btn pass_auth flex_start flex_items" href="javascript:">接受</a>
+              <a class="weui-swiped-btn refuse_auth flex_start flex_items" href="javascript:">拒绝</a>
+            </div> -->
+        </div>
+        
         <a href="javascript:;" class="authorize_items flex_between flex_items">
             <div class="img_text_box flex_start flex_items">
                 <img class="av_img flex_shrink" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" alt="">

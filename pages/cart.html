@@ -108,6 +108,10 @@
     	var totleMoney = allMoney();
     	$('.cart_bottom_box').find('span.cs').html(totleMoney);
 
+    	$('input').focus(function() {
+    		console.log(1212);
+    	});
+
     	// 计算购物车总金额
     	function allMoney() {
     		var min = 0;

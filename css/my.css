@@ -73,11 +73,18 @@ body {
 	height: .31rem;
 }
 
+.now_order_status {
+	padding: .5rem .45rem .5rem .65rem;
+}
+
 /**/
 .list_box .weui-cells{
-	margin-top: .1rem;
+	margin-top: .2rem;
 }
 .list_box .weui-cell {
 	height: .9rem;
 	padding: 0 .3rem;
+}
+.weui-cell__hd {
+	width: .65rem;
 }

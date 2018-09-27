@@ -20,6 +20,10 @@ body {
 
 /*有订单*/
 .has_order .top_tab {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	list-style: none;
 	height: 1rem;
 	background: #fff;
@@ -51,6 +55,10 @@ body {
 	-webkit-border-radius: .02rem;
 	-moz-border-radius: .02rem;
 	-o-border-radius: .02rem;
+}
+
+.top_spacing {
+	height: 1.02rem;
 }
 
 

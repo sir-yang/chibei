@@ -31,8 +31,8 @@
 		</div>
 		<div class="right_cont">
 			<img class="banner" src="../images/banner_class.png" alt="">			
-			<div class="cont_list">
-				<div class="flex_start flex_warp">
+			<div class="cont_list content-padded">
+				<div class="flex_start flex_warp aaa">
 					<a href="shopDetail.html" class="item_box">
 						<div class="item_cont flex_column">
 							<img class="shop_img" src="../images/class_img.png" alt="">
@@ -84,7 +84,12 @@
 						</div>
 					</a>
 				</div>
+				<div class="weui-loadmore">
+			      <i class="weui-loading"></i>
+			      <span class="weui-loadmore__tips">正在加载</span>
+			    </div>
 			</div>
+
 		</div>
 	</div>
 
@@ -94,6 +99,21 @@
     	$('.left_cont').find('li').click(function () {
     		$(this).addClass('active').siblings().removeClass('active');
     	});
+
+    	// 加载更多
+		var loading = false;
+		$('.content-padded').infinite().on("infinite", function() {
+			if(loading) return;
+			loading = true;
+			setTimeout(function() {
+				console.log(1212);
+
+				// 无更多数据
+				$('.content-padded').destroyInfinite();
+				$('.weui-loadmore').hide();
+			  	loading = false;
+			}, 2000);
+		});
     </script>
 </body>
 </html>

@@ -10,7 +10,7 @@ body {
 	background: #fff;
 }
 .search_ipt {
-	margin-right: .2rem;
+	/*margin-right: .2rem;*/
 	padding: 0 .3rem 0 .6rem;
 	line-height: .6rem;
 	background: #f2f3f4;
@@ -72,14 +72,22 @@ body {
 	line-height: .4rem;
 	font-size: .22rem;
 	color: #666;
-	border-radius: .06rem;
+/*	border-radius: .06rem;
 	-webkit-border-radius: .06rem;
 	-moz-border-radius: .06rem;
 	-o-border-radius: .06rem;
-	border: 1px solid #cecece;
+	border: 1px solid #cecece;*/
 }
 .accept_btn.has_add {
 	border: none;
 	color: #333;
 	text-align: left;
+}
+
+.weui-swiped-btn {
+	padding: 0 10px;
+	background: #02e075;
+}
+.refuse_auth {
+	background: #fc3c32;
 }
